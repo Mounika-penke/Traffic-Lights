@@ -1,0 +1,77 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title> Traffic Lights </title>
+        <style>
+            .maincontainer
+            {
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 200px;
+    
+            }
+            .container
+            {
+                height: 200px;
+                width:110px;
+                margin: 10px;
+               
+            }
+            .traffic-lights
+            {
+                background-color:black;
+                 width: 80px;
+                height: 240px;
+                padding: 40px;
+                border-radius: 100px;
+                margin: 20px;
+                padding: 20px;
+               
+            }
+            .a
+            {
+            
+                width: 100px;
+                height: 20px;
+                background-color: blueviolet;
+                border-radius:30px;
+                margin: 25px;
+                color: black;
+                border-color: white;
+                padding: 20px;
+                border-color: black;
+            }  
+            .b
+            {
+                width: 20px;
+                height: 20px;
+                background-color:gray;
+                border-color:cornflowerblue;
+                border-radius:100px;
+                margin: 5px;
+                padding:25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center"> Traffic Lights </h1>
+        <div class="maincontainer">
+            <div class="container">
+                <div class="button">
+                    <button id="b1" onclick="red()" class="a"> Stop </button>
+                    <button id="b2" onclick="yellow()"class="a"> Ready </button>
+                    <button id="b3" onclick="green()" class="a"> Go </button>
+                </div>
+            </div>
+            <div class="traffic-lights">
+                <div class="lights">
+                    <div id="c1" class="b"></div>
+                    <div id="c2" class="b"></div>
+                    <div id="c3" class="b"></div>
+                </div>
+            </div>
+        </div>
+        <script src="lights.js"></script>
+    </body>
+</html>
